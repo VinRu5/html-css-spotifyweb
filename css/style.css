@@ -16,7 +16,8 @@ footer {
 main .sidebar {
     background-color: #000;
     z-index: 2;
-    width: 180px;
+    width: 200px;
+    padding: 20px;
 }
 
 @media screen and (max-width: 576px) {
@@ -44,14 +45,26 @@ main .content {
 }
 
 .button {
-    font-weight: 700;
-    padding: 15px 30px;
+    font-weight: bold;
+    padding: 10px 30px;
     border: 2px solid #fff;
-    border-radius: 20px;
+    border-radius: 30px;
+    font-size: 12px;
 }
 
 .topbar-button {
+    height: 100%;
+    margin-right: 20px;
     display: flex;
     justify-content: right;
     align-items: center;
+}
+
+.sidebar .logo img {
+    height: 42px;
+}
+
+.sidebar-item img {
+    height: 20px;
+    vertical-align: middle;
 }
