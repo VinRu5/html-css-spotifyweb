@@ -16,6 +16,14 @@ footer {
 main .sidebar {
     background-color: #000;
     z-index: 2;
+    width: 180px;
+}
+
+@media screen and (max-width: 576px) {
+    main .sidebar {
+        width: 60px;
+    }
+    
 }
 
 main .content {
@@ -32,12 +40,18 @@ main .content {
     position: fixed;
     top: 0;
     right: 0;
-    
+
 }
 
-.box {
-    width: 200px;
-    height: 200vh;
-    background-color: aqua;
-    margin-top: 80px;
+.button {
+    font-weight: 700;
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+
+.topbar-button {
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
