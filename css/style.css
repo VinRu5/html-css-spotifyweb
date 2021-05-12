@@ -46,7 +46,7 @@ main .content {
     position: fixed;
     top: 0;
     right: 0;
-
+    padding: 0 15px;
 }
 
 .button {
@@ -57,9 +57,12 @@ main .content {
     font-size: 12px;
 }
 
+.button:hover {
+    font-size: 14px;
+}
+
 .topbar-button {
     height: 100%;
-    margin-right: 20px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -121,3 +124,9 @@ main .content {
     font-weight: bold;
     color: #fff;
 }
+
+.sidebar .sidebar-content {
+    /* height: 80%; */
+    overflow-y: scroll;
+}
+
