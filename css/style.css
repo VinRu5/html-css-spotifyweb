@@ -1,3 +1,8 @@
+ul {
+    list-style: none;
+}
+
+/* layout */
 .app {
     height: 100vh;
     color: #fff;
@@ -26,18 +31,14 @@ main .sidebar {
     justify-content: space-between;
 }
 
-@media screen and (max-width: 576px) {
-    main .sidebar {
-        width: 60px;
-    }
-    
-}
 
 main .content {
     background-color: #141922;
     height: 100%;
     overflow-y: scroll;
 }
+
+/* topbar */
 
 .content .topbar {
     background-color: rgba(0, 0, 0, 0.5);
@@ -68,10 +69,21 @@ main .content {
     align-items: center;
 }
 
-.sidebar .logo img {
-    height: 70px;
-    padding: 15px 0;
+
+/* sidebar */
+.logo img {
+    height: 40px;
     color: #fff;
+}
+
+.logo img:last-child {
+    display: none;
+}
+
+
+.sidebar .logo {
+    padding: 15px 0;
+    
 }
 
 .sidebar-item img {
@@ -79,18 +91,28 @@ main .content {
     vertical-align: middle;
 }
 
+.sidebar-item:hover, ul li:hover, .install:hover {
+    color: #fff;
+}
+
 .sidebar-item {
     font-weight: bold;
     padding: 5px 0;
 }
 
-.playlist, .playlist-item {
+.playlist, .sidebar-content ul li {
     padding: 10px 0;
 }
 
 .playlist {
     color: #fff;
     font-weight: bold;
+}
+ 
+.sidebar-content ul li i {
+    font-size: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
 }
 
 .install img {
@@ -126,7 +148,73 @@ main .content {
 }
 
 .sidebar .sidebar-content {
-    /* height: 80%; */
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
+.sidebar-item span {
+    display: inline-block;
+}
+
+/* main page */
+
+.content .main-page {
+    padding: 100px 15px 0 15px;
+}
+
+.main-page .top-page {
+    justify-content: center;
+}
+
+.main-page .top-page ul{
+    justify-content: center;
+}
+
+.main-page .top-page ul li {
+    margin-right: 20px;
+    padding-bottom: 40px;
+    color: #717171;
+    font-size: 12px;
+}
+
+.main-page .top-page ul li:hover {
+    color: #fff;
+}
+
+.main-page .top-page ul li:last-child {
+    margin-right: 0;
+}
+
+/* media query */
+@media screen and (max-width: 576px) {
+    main .sidebar {
+        width: 60px;
+    }
+    
+    .sidebar-item span, .logo img:first-child, .playlist, .sidebar-content ul, .install span, .profile span{
+        display: none;
+    }
+
+    .install {
+        border-bottom: 0;
+    }
+
+    .logo img:last-child {
+        display: block;
+    }
+
+    .content .topbar {
+        width: calc(100% - 60px);
+    }
+
+    .sidebar .sidebar-content {
+    overflow-y: visible;
+    }
+
+    .sidebar-content, .sidebar-profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
