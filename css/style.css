@@ -285,12 +285,21 @@ nav {
     padding: 5px;
 }
 
+.volume-bar i {
+    font-size: 12px;
+}
+
+/* player parte centrale */
+.player-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* volume lato destro */
 .bar {
-    width: 100px;
-    max-width: 40px;
-    display: inline-block;
-    border: 2px solid #fff;
+    background-color: #fff;
+    height: 3px;
     border-radius: 2px;
 }
 
