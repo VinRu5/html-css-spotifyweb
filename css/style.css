@@ -268,6 +268,20 @@ nav {
     align-items: center;
 }
 
+.artist-name {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.artist-track {
+    font-size: 10px;
+    color: #717171;
+}
+
+.preferences {
+    color: #717171;
+    padding: 5px;
+}
 
 
 /* media query */
