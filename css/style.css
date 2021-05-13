@@ -184,6 +184,38 @@ main .content {
     margin-right: 0;
 }
 
+/* sezione album */
+.title-section {
+    padding: 30px 0;
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.album {
+    padding: 5px;
+    text-align: center;
+}
+
+.album-img {
+    max-width: 150px;
+}
+
+.album-img img {
+    width: 100%;
+}
+
+.album-title {
+    padding-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.album-subtitle {
+    padding-top: 10px;
+    font-size: 14px;
+    color: #717171;
+}
+
 /* media query */
 @media screen and (max-width: 576px) {
     main .sidebar {
