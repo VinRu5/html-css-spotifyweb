@@ -255,6 +255,8 @@ nav {
     background-color: rosybrown;
 }
 
+/* artist lato sinistro */
+
 .artist-img {
     height: 60px;
 }
@@ -282,6 +284,21 @@ nav {
     color: #717171;
     padding: 5px;
 }
+
+/* volume lato destro */
+.bar {
+    width: 100px;
+    max-width: 40px;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+
+.volume-bar {
+    align-items: center;
+    justify-content: space-around;
+}
+
 
 
 /* media query */
