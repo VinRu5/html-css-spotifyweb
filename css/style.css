@@ -16,6 +16,8 @@ ul {
 footer {
     height: 90px;
     background-color: #282828;
+    justify-content: space-between;
+    align-items: center;
 }
 
 main .sidebar {
@@ -247,6 +249,26 @@ main .content {
     border-radius: 50%;
 }
 
+/* footer e navbar */
+nav {
+
+    background-color: rosybrown;
+}
+
+.artist-img {
+    height: 60px;
+}
+
+.artist-img img {
+    height: 100%;
+}
+
+.artist-play {
+    justify-content: space-around;
+    align-items: center;
+}
+
+
 
 /* media query */
 @media screen and (max-width: 576px) {
@@ -278,6 +300,10 @@ main .content {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .artist-img {
+        height: 40px;
     }
 
 
