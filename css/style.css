@@ -2,6 +2,11 @@ ul {
     list-style: none;
 }
 
+.around-center {
+    justify-content: space-around;
+    align-items: center;
+}
+
 /* layout */
 .app {
     height: 100vh;
@@ -50,6 +55,7 @@ main .content {
     top: 0;
     right: 0;
     padding: 0 15px;
+    z-index: 1001;
 }
 
 .button {
@@ -160,7 +166,7 @@ main .content {
 /* main page */
 
 .content .main-page {
-    padding: 100px 15px 0 15px;
+    padding: 100px 15px 50px 15px;
 }
 
 .main-page .top-page {
@@ -250,10 +256,7 @@ main .content {
 }
 
 /* footer e navbar */
-nav {
 
-    background-color: rosybrown;
-}
 
 /* artist lato sinistro */
 
@@ -290,24 +293,59 @@ nav {
 }
 
 /* player parte centrale */
-.player-row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.player-top {
+    justify-content: center;
+    align-items: center; 
+    padding-bottom: 15px;
+}
+
+
+.player-top i {
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+.player-top i:nth-child(3) {
+    font-size: 30px;
+}
+
+.player-bottom .time {
+    font-size: 10px;
+    font-weight: bold;
 }
 
 /* volume lato destro */
 .bar {
-    background-color: #fff;
+    background-color: #717171;
     height: 3px;
     border-radius: 2px;
 }
 
-.volume-bar {
-    align-items: center;
-    justify-content: space-around;
+.white {
+    background-color: #fff;
+    width: 20%;
 }
 
+.bar:hover .white {
+    background-color: #ADFF2F;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: none;
+}
+
+.bar:hover .circle {
+    display: block;
+}
+
+.bar.white.row {
+    align-content: center;
+    justify-content: flex-end;
+}
 
 
 /* media query */
