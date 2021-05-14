@@ -196,21 +196,28 @@ main .content {
 
 .main-page .top-page ul{
     justify-content: center;
-}
-
-.main-page .top-page ul li {
-    margin-right: 20px;
     padding-bottom: 40px;
     color: #717171;
     font-size: 12px;
+}
+
+.main-page .top-page ul li {
+    margin-left: 20px;
 }
 
 .main-page .top-page ul li:hover {
     color: #fff;
 }
 
-.main-page .top-page ul li:last-child {
-    margin-right: 0;
+.under-green {
+    height: 2px;
+    width: 30px;
+    background-color: #ADFF2F;
+    margin: 2px auto;
+}
+
+.main-page .top-page ul li:first-child {
+    margin-left: 0;
 }
 
 /* sezione album */
