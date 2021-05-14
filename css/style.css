@@ -7,6 +7,11 @@ ul {
     align-items: center;
 }
 
+.center {
+    justify-content: center;
+    align-items: center; 
+}
+
 /* layout */
 .app {
     height: 100vh;
@@ -21,6 +26,7 @@ ul {
 footer {
     height: 90px;
     background-color: #282828;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -73,7 +79,6 @@ main .content {
 
 .topbar-button {
     height: 100%;
-
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -81,8 +86,6 @@ main .content {
 
 
 /* sidebar */
-
-
 .logo img {
     height: 40px;
     color: #fff;
@@ -104,7 +107,6 @@ main .content {
     border-left: 3px solid #ADFF2F;
     color: #ccc;
 }
-
 
 .sidebar-item svg {
     height: 25px;
@@ -289,16 +291,20 @@ main .content {
 }
 
 /* footer e navbar */
+nav.artist, nav.volume {
+    flex-basis: 210px;
+}
 
+nav.player {
+    flex-basis: 50%;
+    flex-grow: 1;
+}
 
 /* artist lato sinistro */
 
-.artist-img {
-    height: 60px;
-}
 
 .artist-img img {
-    height: 100%;
+    width: 100%;
 }
 
 .artist-name {
@@ -325,10 +331,9 @@ main .content {
 }
 
 /* player parte centrale */
-.player-top {
-    justify-content: center;
-    align-items: center; 
+.player-top { 
     padding-bottom: 10px;
+    display: flex;
 }
 
 
@@ -351,11 +356,20 @@ main .content {
 
 .player-bottom {
     padding-bottom: 15px;
+    display: flex;
 }
 
-.player-bottom .time {
+[class^="time-"] {
     font-size: 10px;
     font-weight: bold;
+}
+
+.time-start {
+    margin-right: 10px;
+}
+
+.time-end {
+    margin-left: 10px;
 }
 
 /* volume lato destro */
@@ -415,7 +429,7 @@ main .content {
     }
 
     .sidebar .sidebar-content {
-    overflow-y: visible;
+        overflow-y: visible;
     }
 
     .sidebar-content, .sidebar-profile {
@@ -423,10 +437,5 @@ main .content {
         flex-direction: column;
         align-items: center;
     }
-
-    .artist-img {
-        height: 40px;
-    }
-
 
 }
