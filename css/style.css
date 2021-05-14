@@ -100,15 +100,33 @@ main .content {
 
 .side-green {
     border-left: 3px solid #ADFF2F;
+    color: #ccc;
 }
 
-.sidebar-item img {
+
+.sidebar-item svg {
     height: 25px;
     vertical-align: middle;
 }
 
+.sidebar-item svg path{
+    fill: #717171;
+}
+
+.side-green svg path {
+    fill: #ccc;
+}
+
+.side-green:hover svg path {
+    fill: #fff;
+}
+
 .sidebar-item:hover, ul li:hover, .install:hover {
     color: #fff;
+}
+
+.sidebar-item:hover svg path {
+    fill: #fff;
 }
 
 .sidebar-item {
