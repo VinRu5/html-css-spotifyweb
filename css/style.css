@@ -309,6 +309,10 @@ nav.player {
     padding: 5px;
 }
 
+.preferences i {
+    padding: 0 3px;
+}
+
 /* player parte centrale */
 .player-top { 
     padding-bottom: 10px;
