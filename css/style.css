@@ -17,6 +17,7 @@ ul {
     height: 100vh;
     color: #fff;
     font-family: 'Montserrat', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
 }
 
 .app main {
@@ -36,7 +37,6 @@ main .sidebar {
     width: 230px;
     height: 100%;
     overflow: hidden;
-    font-size: 12px;
     color: #717171;
     display: flex;
     flex-direction: column;
@@ -59,8 +59,10 @@ main .content {
     position: fixed;
     top: 0;
     right: 0;
-    /* padding: 0 15px; */
     z-index: 1001;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .button {
@@ -68,7 +70,7 @@ main .content {
     padding: 10px 30px;
     border: 2px solid #fff;
     border-radius: 30px;
-    font-size: 12px;
+    
     margin-right: 15px;
 }
 
@@ -76,14 +78,6 @@ main .content {
     font-size: 14px;
     margin-right: 10px;
 }
-
-.topbar-button {
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
 
 /* sidebar */
 .logo img {
@@ -205,11 +199,14 @@ main .content {
     justify-content: center;
     padding-bottom: 40px;
     color: #717171;
-    font-size: 12px;
 }
 
 .main-page .top-page ul li {
     margin-left: 20px;
+}
+
+.main-page .top-page ul li:first-child {
+    margin-left: 0;
 }
 
 .main-page .top-page ul li:hover {
@@ -223,15 +220,11 @@ main .content {
     margin: 2px auto;
 }
 
-.main-page .top-page ul li:first-child {
-    margin-left: 0;
-}
-
 /* sezione album */
 .title-section {
     padding: 30px 0;
     font-size: 24px;
-    font-weight: bolder;
+    font-weight: 700;
 }
 
 .album {
@@ -284,7 +277,7 @@ main .content {
 }
 
 /* footer e navbar */
-nav.artist, nav.volume {
+nav.side {
     flex-basis: 210px;
 }
 
@@ -294,14 +287,11 @@ nav.player {
 }
 
 /* artist lato sinistro */
-
-
 .artist-img img {
     width: 100%;
 }
 
 .artist-name {
-    font-size: 12px;
     font-weight: bold;
 }
 
@@ -319,16 +309,11 @@ nav.player {
     padding: 5px;
 }
 
-.volume-bar i {
-    font-size: 12px;
-}
-
 /* player parte centrale */
 .player-top { 
     padding-bottom: 10px;
     display: flex;
 }
-
 
 .player-top i {
     font-size: 16px;
@@ -365,19 +350,18 @@ nav.player {
     margin-left: 10px;
 }
 
-/* volume lato destro */
 .bar {
     background-color: #717171;
     height: 3px;
     border-radius: 2px;
 }
 
-.white {
+.progress {
     background-color: #fff;
     width: 20%;
 }
 
-.bar:hover .white {
+.bar:hover .progress {
     background-color: #ADFF2F;
 }
 
@@ -393,7 +377,7 @@ nav.player {
     display: block;
 }
 
-.bar.white.row {
+.bar.progress.row {
     align-content: center;
     justify-content: flex-end;
 }
